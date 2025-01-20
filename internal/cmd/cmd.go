@@ -1,13 +1,13 @@
-package cmd
+package cmd //nolint:typecheck
 
 import (
 	"context"
 
+	"goframe-shop-v2/internal/controller"
+
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/os/gcmd"
-
-	"goframe-shop-v2/internal/controller/hello"
 )
 
 var (
@@ -20,7 +20,7 @@ var (
 			s.Group("/", func(group *ghttp.RouterGroup) {
 				group.Middleware(ghttp.MiddlewareHandlerResponse)
 				group.Bind(
-					hello.NewV1(),
+					controller.Hello,
 				)
 			})
 			s.Run()
