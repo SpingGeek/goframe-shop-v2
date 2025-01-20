@@ -23,3 +23,22 @@ go.work.sum
 
 # env file
 .env
+.buildpath
+.hgignore.swp
+.project
+.orig
+.swp
+.idea/
+.settings/
+.vscode/
+bin/
+**/.DS_Store
+gf
+main
+main.exe
+output/
+manifest/output/
+temp/
+temp.yaml
+bin
+**/config/config.yaml
