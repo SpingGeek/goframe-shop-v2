@@ -2,7 +2,10 @@ module goframe-shop-v2
 
 go 1.18
 
-require github.com/gogf/gf/v2 v2.8.3
+require (
+	github.com/gogf/gf/contrib/drivers/mysql/v2 v2.8.3
+	github.com/gogf/gf/v2 v2.8.3
+)
 
 require (
 	github.com/BurntSushi/toml v1.4.0 // indirect
@@ -12,6 +15,7 @@ require (
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
+	github.com/go-sql-driver/mysql v1.7.1 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/grokify/html-strip-tags-go v0.1.0 // indirect
 	github.com/magiconair/properties v1.8.9 // indirect
